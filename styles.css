@@ -1,0 +1,137 @@
+/* styles.css */
+:root {
+  --primary: #5d4037;
+  --background: #ffffff;
+  --text: #2c2c2c;
+  --light-brown: #a1887f;
+  --accent: #f3edea;
+  --border-radius: 14px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+header, footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1.8rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 0.8rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+section {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 2rem 1.4rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.btn, .btn-back {
+  display: inline-block;
+  margin-top: 2rem;
+  background: var(--primary);
+  color: white;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover, .btn-back:hover {
+  background: #4e342e;
+  transform: translateY(-2px);
+}
+
+.info-item, .testimonial {
+  margin-bottom: 2rem;
+  background: var(--accent);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  section {
+    padding: 2rem 3%;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}

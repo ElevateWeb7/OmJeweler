@@ -1,0 +1,224 @@
+<!-- Save as: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om Jewelers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #5d4037;
+      --background: #ffffff;
+      --text: #2c2c2c;
+      --light-brown: #a1887f;
+      --accent: #f3edea;
+      --border-radius: 14px;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header, footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.8rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 0.8rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      padding: 4rem 5%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      background: linear-gradient(to right, var(--light-brown), var(--accent));
+      color: var(--text);
+      padding: 6rem 2rem;
+      text-align: center;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+    .btn {
+      margin-top: 2rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.9rem 2.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      font-weight: 600;
+    }
+    .btn:hover {
+      background: #4e342e;
+      transform: translateY(-2px);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 2rem 1.4rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    }
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1.2rem;
+    }
+    .testimonial, .info-item {
+      margin-bottom: 2rem;
+      background: var(--accent);
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+    form input, form textarea {
+      display: block;
+      width: 100%;
+      margin: 0.75rem 0;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 320px;
+      border-radius: var(--border-radius);
+      margin-top: 1rem;
+      border: none;
+    }
+    footer p {
+      margin: 0.4rem 0;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Om Jewelers</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#info">Information</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Explore Our Jewelry</h1>
+    <p>Timeless Tradition, Trusted Quality</p>
+    <button class="btn">View Collections</button>
+  </section>
+
+  <section id="products">
+    <h2>Our Product Categories</h2>
+    <div class="grid">
+      <div class="card">
+        <a href="rings.html">
+          <img src="images/gold-bangle.jpg" alt="ring">
+          <h3>Rings</h3>
+          <p>From engagement rings to daily wear, crafted in gold, diamond, and platinum.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="necklaces.html">
+          <img src="images/pendant-necklace.jpg" alt="neckles">
+          <h3>Necklaces</h3>
+          <p>Choker sets, long chains, and pendant necklaces in traditional and modern styles.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="bangles.html">
+          <img src="images/enamel-bangle.jpg" alt="Bangles">
+          <h3>Bangles</h3>
+          <p>Handcrafted bangles in gold, enamel, and kundan designs for every occasion.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="info">
+    <h2>Store Information</h2>
+    <div class="info-item">
+      <h3>Business Hours</h3>
+      <p>Monday - Saturday: 10 AM to 8 PM<br>Sunday: Closed</p>
+    </div>
+    <div class="info-item">
+      <h3>Shop Location</h3>
+      <iframe src="https://maps.google.com/maps?q=om%20jewelers&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+    <div class="info-item">
+      <h3>Contact Us</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Om Jewelers. All rights reserved.</p>
+    <p>Designed by ElevateWeb</p>
+  </footer>
+</body>
+</html>
